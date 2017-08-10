@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QgsPointDisplacementRendererWidgetBase</class>
+ <widget class="QWidget" name="QgsPointDisplacementRendererWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>381</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QLabel" name="mCenterSymbolLabel">
+       <property name="text">
+        <string>Center symbol:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mCenterSymbolPushButton">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="mRendererLabel">
+       <property name="text">
+        <string>Renderer:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="mRendererComboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="mRendererSettingsButton">
+     <property name="text">
+      <string>Renderer settings...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QGroupBox" name="mLabellingGroupBox">
+     <property name="title">
+      <string>Labels</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="mLabelAttributeLabel">
+        <property name="text">
+         <string>Label attribute:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="mLabelFieldComboBox"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Label font:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="mLabelFontButton">
+        <property name="text">
+         <string>Font...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="mLabelColorLabel">
+        <property name="text">
+         <string>Label color:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QgsColorButtonV2" name="mLabelColorButton">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QCheckBox" name="mScaleDependentLabelsCheckBox">
+        <property name="text">
+         <string>Use scale dependent labelling</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="mMaxScaleLabel">
+        <property name="text">
+         <string>Max scale denominator:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="mMaxScaleDenominatorEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QGroupBox" name="mDisplacementCirclesGroupBox">
+     <property name="title">
+      <string>Displacement circles</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="1">
+       <widget class="QgsColorButtonV2" name="mCircleColorButton">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="mCircleRadiusLabel">
+        <property name="text">
+         <string>Circle radius modification:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="mCircleWidthLabel">
+        <property name="text">
+         <string>Circle pen width:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QDoubleSpinBox" name="mCircleWidthSpinBox"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QDoubleSpinBox" name="mDistanceSpinBox">
+        <property name="decimals">
+         <number>7</number>
+        </property>
+        <property name="maximum">
+         <double>999999999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="mCircleColorLabel">
+        <property name="text">
+         <string>Circle color:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="mDistanceToleranceLabel">
+        <property name="text">
+         <string>Point distance tolerance:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="mCircleModificationSpinBox">
+        <property name="minimum">
+         <double>-99.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsColorButtonV2</class>
+   <extends>QToolButton</extends>
+   <header>qgscolorbuttonv2.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>mCenterSymbolPushButton</tabstop>
+  <tabstop>mRendererComboBox</tabstop>
+  <tabstop>mRendererSettingsButton</tabstop>
+  <tabstop>mCircleWidthSpinBox</tabstop>
+  <tabstop>mCircleColorButton</tabstop>
+  <tabstop>mCircleModificationSpinBox</tabstop>
+  <tabstop>mDistanceSpinBox</tabstop>
+  <tabstop>mLabelFieldComboBox</tabstop>
+  <tabstop>mLabelFontButton</tabstop>
+  <tabstop>mLabelColorButton</tabstop>
+  <tabstop>mScaleDependentLabelsCheckBox</tabstop>
+  <tabstop>mMaxScaleDenominatorEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
